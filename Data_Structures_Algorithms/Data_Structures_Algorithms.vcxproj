@@ -133,14 +133,24 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="src\Algorithms\binary_search.c" />
+    <ClCompile Include="src\Algorithms\bubble_sort.c" />
     <ClCompile Include="src\the_selection_problem.c" />
+    <ClCompile Include="src\Validation\validate_sort.c" />
+    <ClCompile Include="src\Validation\validation.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\array_generator.h" />
     <ClInclude Include="include\timer.h" />
     <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\vect_copy.h" />
     <ClInclude Include="src\Algorithms\binary_search.h" />
+    <ClInclude Include="src\Algorithms\bubble_sort.h" />
     <ClInclude Include="src\the_selection_problem.h" />
+    <ClInclude Include="src\Validation\validate_sort.h" />
+    <ClInclude Include="src\Validation\validation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TO_DO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

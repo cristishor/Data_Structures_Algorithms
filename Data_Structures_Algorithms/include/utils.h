@@ -23,7 +23,7 @@
 #define LARGE_ARRAY_SIZE 10000
 
 /* Maximum size of a character string */
-#define MAX_CHAR_STRING 255
+#define MAX_CHAR_STRING 256
 
 /*
 */

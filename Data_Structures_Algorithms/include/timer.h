@@ -8,10 +8,13 @@
 #include <windows.h> // Windows platform only!
 #include "utils.h"
 
+static inline void startClock(const char functionName[MAX_CHAR_STRING]);
+static inline void stopClock();
+
 static LARGE_INTEGER StartingTime, EndingTime, ElapsedMicroseconds;
 static LARGE_INTEGER Frequency;
 
-void startClock(const char functionName[MAX_CHAR_STRING])
+static inline void startClock(const char functionName[MAX_CHAR_STRING])
 {
   if (!QueryPerformanceFrequency(&Frequency)) {
     fprintf(stderr, "High-resolution performance counter not supported.\n");
@@ -27,7 +30,7 @@ void startClock(const char functionName[MAX_CHAR_STRING])
   QueryPerformanceCounter(&StartingTime);
 }
 
-void stopClock()
+static inline void stopClock()
 {
   QueryPerformanceCounter(&EndingTime);
   ElapsedMicroseconds.QuadPart = EndingTime.QuadPart - StartingTime.QuadPart;

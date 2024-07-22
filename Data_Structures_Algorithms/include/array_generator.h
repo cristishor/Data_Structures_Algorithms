@@ -10,7 +10,7 @@
 //  |  |  |  |   |  |  |  |  |  |
 //  ↓  ↓  ↓  ↓   ↓  ↓  ↓  ↓  ↓  ↓
 
-int* generateRandArray(int length, int maxRandVal);
+static inline int* generateRandArray(int length, int maxRandVal);
 
 /* Default array generation to 10,000 elements. */
 #define GENERATE_ARRAY() generateRandArray(LARGE_ARRAY_SIZE, DECENTLY_SIZED_MAX_RAND_VAL)
@@ -23,7 +23,7 @@ int* generateRandArray(int length, int maxRandVal);
 
 /* -+-+-+-+-+-+-+-+-+- Implementation -+-+-+-+-+-+-+-+-+- */
 
-int* generateRandArray(
+static inline int* generateRandArray(
   int   length,
   int   maxRandVal
 )

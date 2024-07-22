@@ -24,6 +24,15 @@
     <ClCompile Include="src\Algorithms\binary_search.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Algorithms\bubble_sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Validation\validate_sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Validation\validation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\array_generator.h">
@@ -41,5 +50,20 @@
     <ClInclude Include="src\Algorithms\binary_search.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Algorithms\bubble_sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vect_copy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Validation\validate_sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Validation\validation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TO_DO.txt" />
   </ItemGroup>
 </Project>

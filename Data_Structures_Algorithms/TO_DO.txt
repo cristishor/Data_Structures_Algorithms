@@ -1,0 +1,25 @@
+- naive approach + add separate test (or implement some timeout for tests in case it runs too slow)
+- sort validation (only need done once)
+- run same test like 10 times => mean
+- MSE
+- redo summary - THE SELECTION PROBLEM
+
+
+
+  // Considering that the arrays generated are (pseudo)random values, it means that,
+  // for large enough input sets relative to the value span of one variable,
+  // the numbers are going to be =~ equally distributed in our interval => 
+  // we can argue that the K'th largest number sits at around K / N.
+  // Although, for our chosen array lengths, this assumption is going to be horribly wrong:d,
+  // we could possibly see how this statement holds in the form of: for larger sets it would
+  // be faster (relative to the set size) than to a smaller quantity
+
+  // So my initial idea would be to create a LR tree (don't even know what that is, or if it's called like that).
+  // But basically take some node in the middle, balance it around K / N, and wait untill either left side
+  // reaches K elements (less than the Arr[n/k]) ... oh yea, but also fully create the tree. Ok I see many things I don't
+  // know how to pull out out here so let's just try something.
+
+  // One last note though, it'd be fun to take a Data Oriented approach, see how stuff work for different types
+  // of input sets, such white noise and others.
+
+- git readme
